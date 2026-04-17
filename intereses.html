@@ -3,42 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Primera Página</title>
+    <title>Intereses | Camila Sahores Maxwell</title>
     <link rel="stylesheet" href="estilos/estilos.css">
 </head>
 <body>
-    <header>
-        <h1>Camila Sahores Maxwell</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a class="active" href="intereses.html">Intereses</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+
+    <header class="site-header">
+        <div class="site-header-inner">
+            <a href="index.html" class="logo">CAMILA SAHORES MAXWELL</a>
+            <nav class="site-nav">
+                <a href="index.html">Inicio</a>
+                <a class="active" href="intereses.html">Intereses</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
     </header>
-    <main>
-        <section>
-        <h2>Intereses</h2>
-        <ul>
-            <li><a href="#tejido-circular">Tejido</a></li>
-            <li>Patin</li>
-            <li>Viajes</li>
-        </ul>
-        </section>
-        <section id="tejido-circular">
 
-        <h2 >Tejido Circular</h2>
+    <main class="page-shell">
+        <div class="container">
+            
+            <section class="section-header">
+                <span class="section-tag">Pasiones y Hobbies</span>
+                <h2>Mis Intereses</h2>
+                <p>Más allá del análisis de datos, disfruto de actividades que combinan la lógica, la técnica y el movimiento.</p>
+            </section>
 
-        <img src="https://images.unsplash.com/photo-1773747608437-55b04e59e355?q=80&w=927&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        alt="Manos Tejiendo"
-        style="max-width: 100%;height: auto;">
+            <section class="stats-grid">
+                <div class="stat-card">
+                    <a href="#tejido-circular" style="text-decoration: none;">
+                        <strong>Tejido</strong>
+                        <span>Técnica circular y estructuras</span>
+                    </a>
+                </div>
+                <div class="stat-card">
+                    <strong>Patín</strong>
+                    <span>Deporte y fluidez</span>
+                </div>
+                <div class="stat-card">
+                    <strong>Cocina</strong>
+                    <span>Experimentación y procesos</span>
+                </div>
+            </section>
 
-        <p>El tejido circular es una técnica fascinante que permite crear piezas tubulares continuas mediante el uso de agujas unidas por un cable flexible, eliminando por completo la necesidad de costuras finales. Como alguien que busca patrones y estructuras, notarás que esta técnica transforma el tejido en un proceso lógico y fluido de bucles infinitos, donde el mayor desafío —y placer— radica en la precisión del montaje inicial para evitar torsiones y en el uso de marcadores para identificar el inicio de cada ciclo. Es, en esencia, una forma de optimizar la construcción de una prenda, uniendo puntos de manera estratégica para lograr un resultado impecable y funcional.</p>
-        </section>
+            <section id="tejido-circular" class="page-content">
+                <div class="panel">
+                    <span class="eyebrow">Técnica Destacada</span>
+                    <h3>Tejido Circular</h3>
+                    
+                    <div class="two-column" style="margin-top: 20px; align-items: start;">
+                        <div style="flex: 1 1 300px;">
+                            <img src="https://images.unsplash.com/photo-1773747608437-55b04e59e355?q=80&w=927&auto=format&fit=crop"
+                            alt="Manos Tejiendo" class="case-media">
+                        </div>
+                        
+                        <div style="flex: 1 1 400px;">
+                            <p>El tejido circular es una técnica fascinante que permite crear piezas tubulares continuas mediante el uso de agujas unidas por un cable flexible, eliminando por completo la necesidad de costuras finales.</p>
+                            <br>
+                            <p>Como alguien que busca patrones y estructuras, notarás que esta técnica transforma el tejido en un proceso lógico y fluido de bucles infinitos. Es, en esencia, una forma de <strong>optimizar la construcción</strong> de una prenda, uniendo puntos de manera estratégica para lograr un resultado impecable y funcional.</p>
+                            
+                            <ul class="list-clean" style="margin-top: 20px;">
+                                <li>• Sin costuras laterales</li>
+                                <li>• Proceso lógico y continuo</li>
+                                <li>• Optimización de materiales</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
     </main>
-    <footer>
-        <p>Diseño y Desarrollo Web - 10244 - 1er cuatrimestre 2026</p>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>Diseño y Desarrollo Web - 10244 - 1er cuatrimestre 2026</p>
+            <div class="footer-bottom">
+                &copy; 2026 Camila Sahores Maxwell
+            </div>
+        </div>
     </footer>
+
 </body>
 </html>

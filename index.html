@@ -3,28 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Primera Página</title>
+    <title>Camila Sahores Maxwell | Inicio</title>
     <link rel="stylesheet" href="estilos/estilos.css">
 </head>
-<body>
-    <header>
-        <h1>Camila Sahores Maxwell</h1>
-        <nav>
-            <ul>
-                <li><a class="active" href="index.html">Inicio</a></li>
-                <li><a href="intereses.html">Intereses</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+<body class="home-page">
+
+    <header class="site-header">
+        <div class="site-header-inner">
+            <a href="index.html" class="logo">CAMILA SAHORES MAXWELL</a>
+            <nav class="site-nav">
+                <a class="active" href="index.html">Inicio</a>
+                <a href="intereses.html">Intereses</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
     </header>
-    <main>
-        <section>
-            <img src="img/InfoCami.png" alt="Infografía de Camila Sahores Maxwell">
-            <p>Un poco de informacion sobre mi</p>
-        </section>
+
+    <main class="page-shell">
+        <div class="container">
+            
+            <section class="page-hero">
+                <div class="hero-split">
+                    <div>
+                        <span class="eyebrow">Data & Processes Analyst</span>
+                        <h1>Bienvenida a mi sitio</h1>
+                        <p>Aquí encontrarás información sobre mi perfil profesional, mis proyectos en análisis de datos y mis intereses personales.</p>
+                        <div class="hero-actions">
+                            <a href="contacto.html" class="btn btn-primary">Contactame</a>
+                            <a href="intereses.html" class="btn btn-secondary">Ver Intereses</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page-content">
+                <div class="content-card">
+                    <img src="img/InfoCami.png" alt="Infografía de Camila Sahores Maxwell">
+                    <div style="margin-top: 20px;">
+                        <p>Un poco de información sobre mi trayectoria y habilidades.</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
     </main>
-    <footer>
-        <p>Diseño y Desarrollo Web - 10244 - 1er cuatrimestre 2026</p>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>Diseño y Desarrollo Web - 10244 - 1er cuatrimestre 2026</p>
+            <div class="footer-bottom">
+                &copy; 2026 Camila Sahores Maxwell
+            </div>
+        </div>
     </footer>
+
 </body>
 </html>

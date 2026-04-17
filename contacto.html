@@ -3,28 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Primera Página</title>
+    <title>Contacto | Camila Sahores Maxwell</title>
     <link rel="stylesheet" href="estilos/estilos.css">
 </head>
 <body>
-    <header>
-        <h1>Camila Sahores Maxwell</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="intereses.html">Intereses</a></li>
-                <li><a class="active" href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+
+    <header class="site-header">
+        <div class="site-header-inner">
+            <a href="index.html" class="logo">CAMILA SAHORES MAXWELL</a>
+            <nav class="site-nav">
+                <a href="index.html">Inicio</a>
+                <a href="intereses.html">Intereses</a>
+                <a class="active" href="contacto.html">Contacto</a>
+            </nav>
+        </div>
     </header>
-    <main>
-        <h2>Contacto</h2>
-        <p>Correo: 
-            <a href="mailto:csahoresmaxwell@uade.edu.ar">csahoresmaxwell@uade.edu.ar</a>
-        </p>
+
+    <main class="page-shell">
+        <div class="container">
+            
+            <section class="section-header">
+                <span class="section-tag">Hablemos</span>
+                <h2>Contacto</h2>
+                <p>Si tenés alguna consulta profesional o querés colaborar en un proyecto, podés escribirme a través del formulario o por mis canales directos.</p>
+            </section>
+
+            <div class="contact-layout">
+                <section class="contact-card">
+                    <form action="#" class="contact-form">
+                        <div>
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+                        </div>
+                        <div>
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" id="email" name="email" placeholder="nombre@ejemplo.com" required>
+                        </div>
+                        <div>
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" placeholder="¿En qué puedo ayudarte?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    </form>
+                </section>
+
+                <aside class="contact-card">
+                    <h3>Información de contacto</h3>
+                    <p>También podés encontrarme en:</p>
+                    <dl class="contact-meta">
+                        <dt>Email Institucional</dt>
+                        <dd><a href="mailto:csahoresmaxwell@uade.edu.ar">csahoresmaxwell@uade.edu.ar</a></dd>
+                        
+                        <dt>Ubicación</dt>
+                        <dd>Buenos Aires, Argentina</dd>
+                        
+                        <dt>Horario de atención</dt>
+                        <dd>Lunes a Viernes: 09:00 - 18:00</dd>
+                    </dl>
+                </aside>
+            </div>
+
+        </div>
     </main>
-    <footer>
-        <p>Diseño y Desarrollo Web - 10244 - 1er cuatrimestre 2026</p>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>Diseño y Desarrollo Web - 10244 - 1er cuatrimestre 2026</p>
+            <div class="footer-bottom">
+                &copy; 2026 Camila Sahores Maxwell
+            </div>
+        </div>
     </footer>
+
 </body>
 </html>
